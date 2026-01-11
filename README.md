@@ -76,7 +76,7 @@ All file watching is done with [chokidar](https://github.com/paulmillr/chokidar)
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/claude-agent-monitor.git
+git clone https://github.com/mrchevyceleb/claude-agent-monitor.git
 cd claude-agent-monitor
 
 # Install dependencies
