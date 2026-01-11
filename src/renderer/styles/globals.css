@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #161b22;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #484f58;
+}
+
+/* Selection */
+::selection {
+  background: rgba(88, 166, 255, 0.3);
+}
+
+/* Focus ring */
+*:focus-visible {
+  outline: 2px solid #58a6ff;
+  outline-offset: 2px;
+}
+
+/* Disable text selection on UI elements */
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Monospace font for logs */
+.font-mono {
+  font-family: 'JetBrains Mono', 'Consolas', 'Monaco', monospace;
+}
+
+/* Animation for running status */
+@keyframes pulse-dot {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+/* Resize handle */
+.resize-handle {
+  cursor: col-resize;
+  transition: background-color 0.15s ease;
+}
+
+.resize-handle:hover {
+  background-color: #58a6ff;
+}
+
+.resize-handle:active {
+  background-color: #58a6ff;
+}
